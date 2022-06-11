@@ -1,0 +1,30 @@
+{
+  "name": "api-tests-with-mocha-chai",
+  "version": "1.0.0",
+  "description": "Testing the GO REST API using Mocha, Chai and ChaiHttp",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "mocha",
+    "chai",
+    "chaiHttp",
+    "tests",    
+    "api"
+  ],
+  "author": "Thiago Nogueira dos Santos",
+  "license": "MIT",
+  "devDependencies": {
+    "@faker-js/faker": "^7.2.0",
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "mocha": "^10.0.0",
+    "supertest": "^6.2.3"
+  }
+}
