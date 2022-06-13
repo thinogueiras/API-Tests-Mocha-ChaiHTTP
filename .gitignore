@@ -102,3 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Others
+.vscode/
+mochawesome-report/assets/
+mochawesome-report/*.json
