@@ -10,22 +10,22 @@ describe('GET /users', () => {
     it('Deve retornar uma lista de usuários', (done) => {
         request
             .get('/users')
-            .end((err, res) => {
+            .then((res) => {
                 expect(res).to.has.status(200);
                 expect(res.body).to.be.an('array').that.not.empty;
                 done();
-            });
+            })
+            .catch((err) => done(err));
     });
 
     it('Deve filtrar o usuário por ID', (done) => {
         request
-            .get('/users')
-            .query({ id: 1000 })
-            .end((err, res) => {
+            .get(`/users/${1000}`)
+            .then((res) => {
                 expect(res).to.has.status(200);
-                expect(res.body).to.be.an('array').that.not.empty;
-                expect(res.body.id).to.include.any;
+                expect(res.body).to.be.an('object').that.not.empty;
                 done();
-            });
+            })
+            .catch((err) => done(err));
     });
 });
