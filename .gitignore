@@ -105,5 +105,4 @@ dist
 
 # Others
 .vscode/
-mochawesome-report/assets/
-mochawesome-report/*.json
+mochawesome-report/
